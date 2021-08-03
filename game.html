@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* text inside cell */
+      td {
+        border: 1px solid black;
+        width: 2em;
+        height: 2em;
+        margin: 0em;
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="stage">Setup Stage</p>
+    <p id="turn">Player's Turn</p>
+    <p id="heroScore">Hero's Score: 0</p>
+    <p id="killerScore">Killer's Score: 0</p>
+    <p id="treasure">Treasures Remaining: 0</p>
+    <p id="round">Round Number: 0</p>
+    <table id="board"></table>
+    <button id="setupCompleteBtn" onclick="setupComplete()">
+      Click to finish the setup page
+    </button>
+    <button id="playCompleteBtn" onclick="endStage()">
+      Click to finish the play page
+    </button>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>
